@@ -6,14 +6,14 @@ int main()
 	cin>>t;
 	while(t--)
 	{
-		long long int n,fact=1;
+	   long long int n,fact=1;
 	    cin>>n;
 	    if(n==0 || n==1)
-        {
-			cout<<"1"<<endl;
-			continue;
-		}
-		n%=mod;
+            {
+	       cout<<"1"<<endl;
+	       continue;
+	    }
+	    n%=mod;
 	    for(int i=2;i<=n;i++)
 	    {
 	 	   fact=(fact*i)%mod;
